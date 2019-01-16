@@ -1,0 +1,28 @@
+.idea/*
+.DS_Store
+
+*.backup
+
+### Ansible ###
+*.retry
+ansible.cfg
+hosts
+
+### My ###
+temp/
+key-pair/
+scripts/
+ISSUES.md
+
+# Logs
+logs
+*.log
+
+# dotenv environment variables file
+.env
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfvars

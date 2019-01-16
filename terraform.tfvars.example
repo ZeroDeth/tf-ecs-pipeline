@@ -1,0 +1,44 @@
+
+#------------ECS cluster----------------
+
+# Customize the Cluster Name
+cluster_name = "hapi-app"
+
+# Customize your ECR Registry Name
+app_repository_name = "hapi-app"
+
+#------------APPLICATION----------------
+
+container_name = "hello-hapi"
+
+# Number of containers
+desired_tasks = 2
+min_tasks = 2
+max_tasks = 4
+cpu_to_scale_up = 80
+cpu_to_scale_down = 30
+desired_task_cpu = "256"
+desired_task_memory = "512"
+
+# Listener Application Load Balancer Port
+alb_port = "80"
+
+# Target Group Load Balancer Port
+container_port = "80"
+
+domain_name = "devops"
+domain = "devops"
+
+#------------GITHUB----------------
+
+# Github Repository Owner
+git_repository_owner = "zerodeth"
+
+# Github Repository Project Name
+git_repository_name = "hello-hapi"
+
+# Default Branch
+git_repository_branch = "master"
+
+# Customize your AWS Region
+aws_region = "eu-west-1"
